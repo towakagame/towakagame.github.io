@@ -38,7 +38,7 @@
     <script>
         window.applicationCache.ondownloading = function () {
             document.getElementById('progress').innerHTML =
-                'TOWAKA GAME SEDANG MEMULAI PROSES CACHE, MOHON MENUNGGU BOSKU';
+                'TOWAKA GAME SEDANG MEMULAI PROSES CACHE, MOHON MENUNGGU..';
         };
         window.applicationCache.onprogress = function (a) {
             document.getElementById('progress').innerHTML =
@@ -46,9 +46,9 @@
         };
         window.applicationCache.oncached = function (e) {
             document.getElementById('progress').innerHTML =
-                'TOWAKA GAME PROSES CACHE SELESAI BOSKU';
+                'TOWAKA GAME PROSES CACHE SELESAI';
             setTimeout(function () {
-                document.getElementById('progress').innerHTML = 'Silahkankan tutup dan buka kembali browser PS4';
+                document.getElementById('progress').innerHTML = 'Silahkan tutup dan buka kembali browser PS4';
             }, 1500);
             localStorage.cachedG = 'yes';
         };
@@ -106,7 +106,7 @@
         }
 
         function goldhen() {
-            progress.innerHTML = 'Sedang MengAktifkan Goldhen 2.4B18.2. Mohon menunggu';
+            progress.innerHTML = 'Sedang MengAktifkan Goldhen 2.4B18.2. Mohon menunggu..';
             LoadedMSG = 'GoldHEN 2.4B18.2 Berhasil di Aktifkan';
             PLfile = 'goldhen.bin';
             setTimeout(loadBIN, 50);
@@ -114,7 +114,7 @@
     </script>
 </head>
 
-<body onload="if(localStorage.cachedG=='yes')setTimeout(poc,50);" style="background-color: #3374ff">
+<body onload="if(localStorage.cachedG=='yes')setTimeout(poc,50);" style="background-color: #080808">
     <h1 style="
         text-shadow: 4px 4px 4px black;
         font-size: 30px;
@@ -123,7 +123,7 @@
         color: #ffff33;
         margin: 5% 0 10% 0;
       ">
-        TOWAKA GAME EXPLOIT HOST GOLDHEN 2.4B18.2 Fw9.00
+        TOWAKA GAME EXPLOIT HOST GOLDHEN 2.4B18.2 FW 9.00
     </h1>
     <hr>
     <h1 id="progress" style="
@@ -132,7 +132,7 @@
         text-shadow: 4px 4px 4px black;
         color: #ffff33;
       ">
-        TOWAKA GAME MELAKUKAN PENGAKTIFAN MOHON MENUNGGU
+        TOWAKA GAME MELAKUKAN PENGAKTIFAN MOHON MENUNGGU..
     </h1>
     <hr>
 
